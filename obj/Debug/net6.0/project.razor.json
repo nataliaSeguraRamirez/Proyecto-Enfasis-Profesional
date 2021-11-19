@@ -16323,6 +16323,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\ProyEnfasisProfesional\\Tutorias\\Views\\Tutors\\Details.cshtml",
+      "TargetPath": "Views\\Tutors\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\ProyEnfasisProfesional\\Tutorias\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"

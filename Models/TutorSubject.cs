@@ -7,10 +7,8 @@ namespace Tutorias.Models
 {
     public class TutorSubject
     {
-        public int TutorshipID{ get; set; }
+        public int ID{ get; set; }
         public int StudentID { get; set; }
         public int TutorID { get; set; }
-        public float? Score { get; set; }
-        public string? Description {get;set;} = "No se dieron comentarios";
     }
 }

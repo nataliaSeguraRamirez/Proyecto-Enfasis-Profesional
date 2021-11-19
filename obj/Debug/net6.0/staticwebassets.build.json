@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VS3qUkoHRoQ3Eyf51mCZyLO0mxL1bk1shphMMnDbis4=",
+  "Hash": "M23qbGSm+CIGOCQAsNSpTyjMvre4CgjrDSzbvZUC+Vg=",
   "Source": "Tutorias",
   "BasePath": "_content/Tutorias",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\DefaultPicture.png"
+    },
+    {
+      "Identity": "C:\\ProyEnfasisProfesional\\Tutorias\\wwwroot\\Images\\unnamed.jpg",
+      "SourceId": "Tutorias",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\ProyEnfasisProfesional\\Tutorias\\wwwroot\\",
+      "BasePath": "_content/Tutorias",
+      "RelativePath": "Images/unnamed.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\unnamed.jpg"
     },
     {
       "Identity": "C:\\ProyEnfasisProfesional\\Tutorias\\wwwroot\\js\\site.js",
