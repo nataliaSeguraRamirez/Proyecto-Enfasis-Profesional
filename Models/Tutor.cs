@@ -1,0 +1,17 @@
+using System;
+using System.Collections.Generic;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Tutorias.Models
+{   
+    public class Tutor
+    {
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public float AverageScore { get; set; }
+        public ICollection<Tutorship> Tutorships { get; set; }
+        public ICollection<TutorCategory> TutorCategories {get;set;}
+        public ICollection<Subject> Subjects {get;set;}
+    }
+}
