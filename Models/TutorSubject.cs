@@ -5,9 +5,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Tutorias.Models
 {
-    public class Tutorship
+    public class TutorSubject
     {
-        public int ID{ get; set; }
+        public int TutorshipID{ get; set; }
         public int StudentID { get; set; }
         public int TutorID { get; set; }
         public float? Score { get; set; }

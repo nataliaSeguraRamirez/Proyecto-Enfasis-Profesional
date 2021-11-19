@@ -9,12 +9,8 @@ namespace Tutorias.Models
     public class Category
     {
         public int ID { get; set; }
+        public string Name{get;set;}
         public ICollection<TutorCategory> TutorCategories {get;set;}
-        public enum Categories
-        {
-            [Display(Name = "Ciencias Sociales")] Ciencias_Sociales,
-            [Display(Name = "Ciencias Naturales")] Ciencias_Naturales,
-            [Display(Name = "Ciencias Exactas")] Ciencias_Exactas,
-        }
+        public ICollection<Subject> Subjects {get;set;}   
     }
 }

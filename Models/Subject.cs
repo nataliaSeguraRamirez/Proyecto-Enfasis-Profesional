@@ -7,15 +7,8 @@ namespace Tutorias.Models
 {
     public class Subject
     {
-        public enum Subjects
-        {   
-
-            //cambiar relación muchos a muchos con tutor
-            [Display(Name = "Álgebra Lineal")] Algebra_Lineal,
-            [Display(Name = "Física Mecánica")] Fisica_Mecanica,
-            [Display(Name = "Ciencias Políticas")] Ciencias_Políticas,
-            [Display(Name = "Cálculo Diferencial")] Calculo_Diferencial,
-        }
-        [Key]public int Name { get; set; }
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public string CategoryName{get;set;}
     }
 }
