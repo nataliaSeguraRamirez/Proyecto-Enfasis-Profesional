@@ -6,30 +6,24 @@
 
 <h2>Index</h2>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-
-
-<div class="d-flex justify-content-around flex-wrap">
+<div class="d-flex justify-content-around flex-wrap align-items-baseline">
     @foreach (var tutor in Model)
     {
-        
-            <div class="card border-secondary text-center mt-2 mb-3" style="width: 22rem; margin: 15px;">
-                <img class="card-img-top" style="border-radius: 50%; padding:15px; object-fit: cover;" src="/Images/DefaultPicture.png"
-                        alt="Foto @tutor.Name" width="300px" height="100%" >
-                <div class="card-body">
-                    <h4 class="card-title">@tutor.Name</h4>
-                    <p class="card-text">@tutor.Description</p>
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">@tutor.AverageScore</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
-                </ul>
-                <div class="card-body">
-                    <a class="btn btn-primary" asp-route-id="@tutor.ID" asp-action="Details" role="button">Ver Perfil</a>
-                </div>
+        <div class="card border-secondary text-center mt-2 mb-3" style="width: 22rem; margin: 15px;">
+            <img class="card-img-top img-fluid" style="border-radius: 50%; padding:15px; "
+            src="/Images/DefaultPicture.png" alt="Foto @tutor.Name" width="300px" height="300px">
+            <div class="card-body">
+                <h4 class="card-title">@tutor.Name</h4>
+                <p class="card-text">@tutor.Description</p>
             </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">@tutor.AverageScore</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-body">
+                <a class="btn btn-primary" asp-route-id="@tutor.ID" asp-action="Details" role="button">Ver Perfil</a>
+            </div>
+        </div>
     }
 </div>
