@@ -15,13 +15,16 @@ namespace Tutorias.Data
         public DbSet<Category> Categories { get; set; }
         public DbSet<TutorCategory> TutorCategories { get; set; }
         public DbSet<Subject> Subjects {get;set;}
+        public DbSet<TutorSubject> TutorSubjects {get;set;}
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Tutor>().ToTable("Tutor");
             modelBuilder.Entity<Tutorship>().ToTable("Tutorship");
             modelBuilder.Entity<Student>().ToTable("Student");
             modelBuilder.Entity<Category>().ToTable("Category");
-            modelBuilder.Entity<Student>().ToTable("Student");
+            modelBuilder.Entity<TutorCategory>().ToTable("TutorCategory");
+            modelBuilder.Entity<Subject>().ToTable("Subject");
+            modelBuilder.Entity<TutorSubject>().ToTable("TutorSubject");
         }
     }
 }

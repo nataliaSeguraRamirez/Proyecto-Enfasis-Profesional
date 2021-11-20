@@ -5,10 +5,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Tutorias.Models
 {
-    public class TutorSubject
+    public class TutorshipPetition
     {
         public int ID{ get; set; }
+        public int StudentID { get; set; }
         public int TutorID { get; set; }
-        public int SubjectID{get;set;}
+        public string State { get; set; } = "Pendiente";
+        public string? Message {get;set;} = "Sin mensaje.";
     }
 }

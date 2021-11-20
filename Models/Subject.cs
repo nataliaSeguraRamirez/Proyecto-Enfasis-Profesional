@@ -10,5 +10,6 @@ namespace Tutorias.Models
         public int ID { get; set; }
         public string Name { get; set; }
         public string CategoryName{get;set;}
+        public ICollection<TutorSubject>? TutorSubjects { get; set; }
     }
 }

@@ -16,6 +16,6 @@ namespace Tutorias.Models
         public float? AverageScore { get; set; }
         public ICollection<Tutorship>? Tutorships { get; set; }
         public ICollection<TutorCategory>? TutorCategories { get; set; }
-        public ICollection<Subject>? Subjects { get; set; }
+        public ICollection<TutorSubject>? TutorSubjects { get; set; }
     }
 }
