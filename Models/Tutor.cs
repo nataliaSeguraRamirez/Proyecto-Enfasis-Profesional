@@ -10,8 +10,6 @@ namespace Tutorias.Models
         public int ID { get; set; }
         public string Name { get; set; }
         public string Email {get;set;}
-        [MaxLength(80)]
-        public string ShortDescription { get; set; }
         public string Description { get; set; }
         public float? AverageScore { get; set; }
         public ICollection<Tutorship>? Tutorships { get; set; }

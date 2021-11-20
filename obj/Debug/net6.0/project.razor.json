@@ -16303,6 +16303,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\ProyEnfasisProfesional\\Tutorias\\Views\\Tutors\\Edit.cshtml",
+      "TargetPath": "Views\\Tutors\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\ProyEnfasisProfesional\\Tutorias\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"

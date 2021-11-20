@@ -46,7 +46,7 @@ namespace Tutorias.Controllers
 
         [HttpPost, ValidateAntiForgeryToken]
         [Route("Tutors/Create")]
-        public async Task<IActionResult> Create([Bind("Name", "Email", "ShortDescription", "Description")] Tutor tutor)
+        public async Task<IActionResult> Create([Bind("Name", "Email", "Description")] Tutor tutor)
         {
             try
             {
@@ -65,6 +65,49 @@ namespace Tutorias.Controllers
                     "see your system administrator.");
             }
             return View();
+        }
+
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var tutor = await _context.Tutors.FindAsync(id);
+            if (tutor == null)
+            {
+                return NotFound();
+            }
+            return View(tutor);
+        }
+
+        [HttpPost, ActionName("Edit")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditPost(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var tutorToUpdate = await _context.Tutors.FirstOrDefaultAsync(t => t.ID == id);
+            if (await TryUpdateModelAsync<Tutor>(tutorToUpdate, "", s => s.Name, s => s.Email, s => s.Description))
+            {
+                try
+                {
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (DbUpdateException /* ex */)
+                {
+                    //Log the error (uncomment ex variable name and write a log.)
+                    ModelState.AddModelError("", "Unable to save changes. " +
+                        "Try again, and if the problem persists, " +
+                        "see your system administrator.");
+                }
+            }
+            return View(tutorToUpdate);
         }
     }
 }
