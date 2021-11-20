@@ -5,8 +5,10 @@ using Tutorias.Models;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace Tutorias.Controllers
 {
+
     public class TutorsController : Controller
     {
         private readonly TutorshipContext _context;
@@ -42,9 +44,9 @@ namespace Tutorias.Controllers
             return View();
         }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Name", "Email, ShortDescription, Description")] Tutor tutor)
+        [HttpPost, ValidateAntiForgeryToken]
+        [Route("Tutors/Create")]
+        public async Task<IActionResult> Create([Bind("Name", "Email", "ShortDescription", "Description")] Tutor tutor)
         {
             try
             {
@@ -62,7 +64,7 @@ namespace Tutorias.Controllers
                     "Try again, and if the problem persists " +
                     "see your system administrator.");
             }
-            return View(tutor);
+            return View();
         }
     }
 }
