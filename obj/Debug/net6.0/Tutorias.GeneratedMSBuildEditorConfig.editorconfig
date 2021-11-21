@@ -8,73 +8,73 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Tutorias
 build_property.RootNamespace = Tutorias
-build_property.ProjectDir = c:\ProyEnfasisProfesional\Tutorias\
+build_property.ProjectDir = C:\ProyEnfasisProfesional\Tutorias\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\ProyEnfasisProfesional\Tutorias
+build_property.MSBuildProjectDirectory = C:\ProyEnfasisProfesional\Tutorias
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/ProyEnfasisProfesional/Tutorias/Views/Components/CardComponent.cshtml]
+[C:/ProyEnfasisProfesional/Tutorias/Views/Components/CardComponent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcG9uZW50c1xDYXJkQ29tcG9uZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/ProyEnfasisProfesional/Tutorias/Views/Home/About.cshtml]
+[C:/ProyEnfasisProfesional/Tutorias/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/ProyEnfasisProfesional/Tutorias/Views/Home/Index.cshtml]
+[C:/ProyEnfasisProfesional/Tutorias/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/ProyEnfasisProfesional/Tutorias/Views/Home/Login.cshtml]
+[C:/ProyEnfasisProfesional/Tutorias/Views/Home/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/ProyEnfasisProfesional/Tutorias/Views/Home/Register.cshtml]
+[C:/ProyEnfasisProfesional/Tutorias/Views/Home/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/ProyEnfasisProfesional/Tutorias/Views/Shared/Error.cshtml]
+[C:/ProyEnfasisProfesional/Tutorias/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/ProyEnfasisProfesional/Tutorias/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/ProyEnfasisProfesional/Tutorias/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/ProyEnfasisProfesional/Tutorias/Views/Students/Index.cshtml]
+[C:/ProyEnfasisProfesional/Tutorias/Views/Students/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/ProyEnfasisProfesional/Tutorias/Views/Tutors/Create.cshtml]
+[C:/ProyEnfasisProfesional/Tutorias/Views/Tutors/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV0b3JzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/ProyEnfasisProfesional/Tutorias/Views/Tutors/Delete.cshtml]
+[C:/ProyEnfasisProfesional/Tutorias/Views/Tutors/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV0b3JzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/ProyEnfasisProfesional/Tutorias/Views/Tutors/Details.cshtml]
+[C:/ProyEnfasisProfesional/Tutorias/Views/Tutors/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV0b3JzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/ProyEnfasisProfesional/Tutorias/Views/Tutors/Edit.cshtml]
+[C:/ProyEnfasisProfesional/Tutorias/Views/Tutors/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV0b3JzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/ProyEnfasisProfesional/Tutorias/Views/Tutors/Index.cshtml]
+[C:/ProyEnfasisProfesional/Tutorias/Views/Tutors/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHV0b3JzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/ProyEnfasisProfesional/Tutorias/Views/_ViewImports.cshtml]
+[C:/ProyEnfasisProfesional/Tutorias/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/ProyEnfasisProfesional/Tutorias/Views/_ViewStart.cshtml]
+[C:/ProyEnfasisProfesional/Tutorias/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/ProyEnfasisProfesional/Tutorias/Views/Shared/_Layout.cshtml]
+[C:/ProyEnfasisProfesional/Tutorias/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ipbw88dyv2

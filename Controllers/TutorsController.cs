@@ -17,9 +17,24 @@ namespace Tutorias.Controllers
         {
             _context = context;
         }
-        public async Task<ActionResult> Index()
+        public async Task<ActionResult> Index(string sortOrder)
         {
-            return View(await _context.Tutors.ToListAsync());
+            ViewData["ScoreSortParm"] = String.IsNullOrEmpty(sortOrder) ? "AverageScore" : "";
+            ViewData["NameSortParm"] = sortOrder == "Name" ? "Name" : "";
+            var tutors = from t in _context.Tutors select t;
+            switch (sortOrder)
+            {
+                case "AverageScore":
+                    tutors = tutors.OrderByDescending(t => t.AverageScore);
+                    break;
+                case "Name":
+                    tutors = tutors.OrderBy(t => t.Name);
+                    break;
+                default:
+                    tutors = tutors.OrderByDescending(t => t.AverageScore);
+                    break;
+            }
+            return View(await tutors.AsNoTracking().ToListAsync());
         }
 
         public async Task<IActionResult> Details(int? id)
@@ -118,7 +133,7 @@ namespace Tutorias.Controllers
             }
 
             var tutor = await _context.Tutors.AsNoTracking().FirstOrDefaultAsync(m => m.ID == id);
-            
+
             if (tutor == null)
             {
                 return NotFound();
