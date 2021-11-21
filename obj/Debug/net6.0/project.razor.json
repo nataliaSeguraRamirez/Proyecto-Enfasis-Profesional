@@ -16308,6 +16308,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\ProyEnfasisProfesional\\Tutorias\\Views\\Home\\Register.cshtml",
+      "TargetPath": "Views\\Home\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\ProyEnfasisProfesional\\Tutorias\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -16325,6 +16330,11 @@
     {
       "FilePath": "c:\\ProyEnfasisProfesional\\Tutorias\\Views\\Students\\Index.cshtml",
       "TargetPath": "Views\\Students\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\ProyEnfasisProfesional\\Tutorias\\Views\\Home\\Login.cshtml",
+      "TargetPath": "Views\\Home\\Login.cshtml",
       "FileKind": "mvc"
     },
     {
