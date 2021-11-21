@@ -16368,6 +16368,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\ProyEnfasisProfesional\\Tutorias\\Views\\Tutors\\Delete.cshtml",
+      "TargetPath": "Views\\Tutors\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\ProyEnfasisProfesional\\Tutorias\\Views\\Components\\CardComponent.cshtml",
       "TargetPath": "Views\\Components\\CardComponent.cshtml",
       "FileKind": "mvc"
