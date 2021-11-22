@@ -17,11 +17,19 @@ namespace Tutorias.Controllers
         {
             _context = context;
         }
-        public async Task<ActionResult> Index(string sortOrder)
+        public async Task<ActionResult> Index(string sortOrder, string searchString)
         {
-            ViewData["ScoreSortParm"] = String.IsNullOrEmpty(sortOrder) ? "AverageScore" : "";
-            ViewData["NameSortParm"] = sortOrder == "Name" ? "Name" : "";
+            //El ordenamiento por defecto de los tutores es en base a su califiación promedio de más alto a más bajo
+            ViewData["ScoreSortParm"] = "AverageScore";
+            ViewData["NameSortParm"] = "Name";
+            ViewData["CurrentFilter"] = searchString;
+
             var tutors = from t in _context.Tutors select t;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                tutors = tutors.Where(t => t.Name.Contains(searchString));
+            }
             switch (sortOrder)
             {
                 case "AverageScore":
