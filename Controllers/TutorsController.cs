@@ -17,11 +17,22 @@ namespace Tutorias.Controllers
         {
             _context = context;
         }
-        public async Task<ActionResult> Index(string sortOrder, string searchString)
+        public async Task<ActionResult> Index(string sortOrder, string currentFilter ,string searchString, int? pageNumber)
         {
             //El ordenamiento por defecto de los tutores es en base a su califiación promedio de más alto a más bajo
+            ViewData["CurrentSort"] = sortOrder;
             ViewData["ScoreSortParm"] = "AverageScore";
             ViewData["NameSortParm"] = "Name";
+
+            if(searchString != null)
+            {
+                pageNumber = 1;
+            }
+            else
+            {
+                searchString = currentFilter;
+            }
+
             ViewData["CurrentFilter"] = searchString;
 
             var tutors = from t in _context.Tutors select t;
@@ -42,7 +53,8 @@ namespace Tutorias.Controllers
                     tutors = tutors.OrderByDescending(t => t.AverageScore);
                     break;
             }
-            return View(await tutors.AsNoTracking().ToListAsync());
+            int pageSize = 3;
+            return View(await PaginatedList<Tutor>.CreateAsync(tutors.AsNoTracking(), pageNumber ?? 1, pageSize));
         }
 
         public async Task<IActionResult> Details(int? id)

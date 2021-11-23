@@ -1,4 +1,4 @@
-@model IEnumerable<Tutorias.Models.Tutor>
+@model PaginatedList<Tutorias.Models.Tutor>
 
 @{
     ViewData["Title"] = "Index";
@@ -26,10 +26,10 @@
             </a>
 
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li><a class="dropdown-item" asp-action="Index"
-                        asp-route-sortOrder="@ViewData["NameSortParm"]">Nombre</a></li>
-                <li><a class="dropdown-item" asp-action="Index"
-                        asp-route-sortOrder="@ViewData["ScoreSortParm"]">Puntuación</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-sortOrder="@ViewData["NameSortParm"]"
+                        asp-route-currentFilter="@ViewData["CurrentFilter"]">Nombre</a></li>
+                <li><a class="dropdown-item" asp-action="Index" asp-route-sortOrder="@ViewData["ScoreSortParm"]"
+                        asp-route-currentFilter="@ViewData["CurrentFilter"]">Puntuación</a></li>
             </ul>
         </div>
     </div>
@@ -65,3 +65,33 @@
         </div>
     }
 </div>
+
+@{
+    var previousDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+
+
+
+
+
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        <li class="page-item">
+            <a asp-action="Index" asp-route-sortOrder="@ViewData["CurrentSort"]"
+                asp-route-pageNumber="@(Model.PageIndex - 1)" asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                class="page-link btn btn-default @previousDisabled">
+                Anterior
+            </a>
+        </li>
+        <li class="page-item disabled"><a class="page-link" href="#">@Model.PageIndex</a></li>
+        <li class="page-item">
+            <a asp-action="Index" asp-route-sortOrder="@ViewData["CurrentSort"]"
+                asp-route-pageNumber="@(Model.PageIndex + 1)" asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                class="page-link btn btn-default @nextDisabled">
+                Siguiente
+            </a>
+        </li>
+    </ul>
+</nav>
