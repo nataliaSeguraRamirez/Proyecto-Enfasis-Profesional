@@ -45,7 +45,6 @@
             alt="Foto @tutor.Name" width="300px" height="300px">
             <div class="card-body">
                 <h4 class="card-title">@tutor.Name</h4>
-                <p class="card-text">@tutor.Description</p>
             </div>
             <ul class="list-group list-group-flush">
                 @if (tutor.AverageScore != null)
@@ -71,12 +70,7 @@
     var nextDisabled = !Model.HasNextPage ? "disabled" : "";
 }
 
-
-
-
-
-
-<nav aria-label="Page navigation example">
+<nav class="mt-4">
     <ul class="pagination justify-content-center">
         <li class="page-item">
             <a asp-action="Index" asp-route-sortOrder="@ViewData["CurrentSort"]"

@@ -39,7 +39,7 @@ namespace Tutorias.Controllers
 
             if (!String.IsNullOrEmpty(searchString))
             {
-                tutors = tutors.Where(t => t.Name.Contains(searchString));
+                tutors = tutors.Where(t => t.Name.StartsWith(searchString));
             }
             switch (sortOrder)
             {
@@ -53,7 +53,7 @@ namespace Tutorias.Controllers
                     tutors = tutors.OrderByDescending(t => t.AverageScore);
                     break;
             }
-            int pageSize = 3;
+            int pageSize = 6;
             return View(await PaginatedList<Tutor>.CreateAsync(tutors.AsNoTracking(), pageNumber ?? 1, pageSize));
         }
 
@@ -61,7 +61,7 @@ namespace Tutorias.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                return NotFound(); 
             }
 
             var tutor = await _context.Tutors.FirstOrDefaultAsync(m => m.ID == id);
