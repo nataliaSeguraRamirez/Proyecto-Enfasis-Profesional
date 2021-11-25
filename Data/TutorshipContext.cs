@@ -1,9 +1,10 @@
 using Tutorias.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace Tutorias.Data
 {
-    public class TutorshipContext : DbContext
+    public class TutorshipContext : IdentityDbContext
     {
         public TutorshipContext(DbContextOptions<TutorshipContext> options) : base(options)
         {
@@ -18,6 +19,7 @@ namespace Tutorias.Data
         public DbSet<TutorSubject> TutorSubjects {get;set;}
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Tutor>().ToTable("Tutor");
             modelBuilder.Entity<Tutorship>().ToTable("Tutorship");
             modelBuilder.Entity<Student>().ToTable("Student");
