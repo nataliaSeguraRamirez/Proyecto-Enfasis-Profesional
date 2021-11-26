@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace Tutorias.Data
 {
-    public class TutorshipContext : IdentityDbContext
+    public class TutorshipContext : IdentityDbContext<Tutor>
     {
         public TutorshipContext(DbContextOptions<TutorshipContext> options) : base(options)
         {

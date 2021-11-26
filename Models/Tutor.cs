@@ -2,12 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Identity;
 
 namespace Tutorias.Models
 {
-    public class Tutor
+    public class Tutor : ApplicationUser
     {
-        public int ID { get; set; }
+        [Key]public int ID { get; set; }
         [RegularExpression(@"^[a-zA-Z]+[a-zA-Z]*$")] [MaxLength(64)] public string Name { get; set; }
         [DataType(DataType.EmailAddress)][MaxLength(128)] public string Email { get; set; }
         [MaxLength(700)] public string Description { get; set; }
