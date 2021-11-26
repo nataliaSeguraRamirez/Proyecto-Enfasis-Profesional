@@ -1,0 +1,65 @@
+@model Tutorias.Models.Tutor
+
+@{
+    ViewData["Title"] = "Details";
+}
+<div class="card-body">
+    <a class="btn btn-primary" asp-action="Index" role="button">Regresar</a>
+</div>
+
+<div class="jumbotron border rounded">
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-4 m-2 text-center">
+                <img class="card-img-top img-fluid" style="border-radius: 50%; padding:15px; object-fit: cover;"
+                    src="/Images/unnamed.jpg" alt="Foto @Model.Name" width="300px" height="100%">
+
+                <div>
+                    Puntuación: @Model.AverageScore
+                </div>
+            </div>
+            <div class="col-7 m-2">
+                <div>
+                    <div class="mt-5">
+                        <h2>@Model.Name</h2>
+                    </div>
+                    <div class="text mt-5">
+                        <h5>@Model.Description</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row m-4">
+            <div class="d-flex flex-row bd-highlight mb-3 flex-wrap">
+                <div class="border rounded m-2">
+                    <div class="m-2">Cálculo Integral</div>
+                </div>
+                <div class="border rounded m-2">
+                    <div class="m-2">Cálculo Diferencial</div>
+                </div>
+                <div class="border rounded m-2">
+                    <div class="m-2">Cálculo Integral</div>
+                </div>
+                <div class="border rounded m-2">
+                    <div class="m-2">Cálculo Diferencial</div>
+                </div>
+                <div class="border rounded m-2">
+                    <div class="m-2">Cálculo Diferencial</div>
+                </div>
+                <div class="border rounded m-2">
+                    <div class="m-2">Cálculo Integral</div>
+                </div>
+                <div class="border rounded m-2">
+                    <div class="m-2">Cálculo Diferencial</div>
+                </div>
+                <div class="border rounded m-2">
+                    <div class="m-2">Cálculo Integral</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+</div>
